@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre Mim</title>
+
+    <link rel="icon" type="image/x-icon"
+        href="https://image2url.com/r2/default/images/1772887474730-3f0511de-009a-4f5b-8e40-77019dfd0df5.png">
+    <!-- Fonte de textos -->
+    <meta charset="UTF-8">
+    <title>Portifólio de Isabella</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Fonte de textos -->
+
+    <!-- Fonte de títulos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
+    <!-- Fonte de títulos -->
+
+    <style>
+        .fonteTexto {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: auto;
+            font-style: normal;
+        }
+
+        .fonteTitulo {
+            font-family: "Bowlby One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            background: #fcb8d6;
+            background: radial-gradient(circle, rgba(252, 184, 214, 1) 0%, rgba(232, 128, 196, 1) 63%, rgba(148, 187, 233, 1) 100%);
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0%;
+            padding: 0%;
+            position: relative;
+        }
+
+        #menu {
+            height: 70px;
+            font-size: 30px;
+            align-items: center;
+            list-style: none;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu a:hover {
+            font-size: xx-large;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-size: 50px;
+            padding: 5px 15px;
+            text-align: center;
+            border-radius: 10px;
+            text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.5);
+
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: 1000;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(255, 245, 249, 0.5);
+        }
+
+        h2::before,
+        h2::after {
+            content: "";
+            flex: 1;
+            border-bottom: 2px solid #333;
+            margin: 0 10px;
+        }
+
+        .decoracao1 {
+            position: absolute;
+            top: 110px;
+            right: 340px;
+        }
+
+        .decoracao2 {
+            position: absolute;
+            top: 145px;
+            left: 330px;
+        }
+
+        /* carrosel de fotos */
+        .carrosel {
+            margin: 0px auto;
+            width: auto;
+            height: 300px;
+            display: flex;
+            overflow-x: auto;
+            gap: 0.5em;
+
+        }
+
+        .carrosel::-webkit-scrollbar {
+            display: none;
+        }
+
+
+        .grupo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5em;
+            animation: spin 5s infinite linear;
+            padding-right: 0.5em;
+        }
+
+        .card {
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            flex: 0 0 5em;
+            height: 250px;
+            width: 250px;
+            padding: 0.5em;
+            border-radius: .2em;
+            align-content: center;
+        }
+
+        @keyframes spin {
+            from {
+                translate: 0;
+            }
+
+            to {
+                translate: -100%;
+            }
+        }
+
+        /* carrosel de fotos tuto: https://www.youtube.com/watch?v=KD1Yo8a_Qis&t=37s */
+
+        .informacoes {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .informacao {
+
+            background-color: rgba(240, 248, 255, 0.507);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            width: 415px;
+            height: 330px;
+            padding: 15px 15px;
+            margin-top: 25px;
+
+            h3 {
+                text-align: center;
+            }
+
+            li {
+                padding: 10px;
+            }
+
+        }
+
+        .perfilGit img {
+
+            width: 40px;
+            height: 40px;
+            position: relative;
+
+        }
+
+        .perfilInsta img {
+
+            width: 40px;
+            height: 40px;
+            position: relative;
+            float: left;
+            padding-right: 10px;
+
+        }
+
+        .perfilGit img:hover {
+
+            width: 42px;
+            height: 42px;
+
+        }
+
+        .perfilInsta img:hover {
+
+            width: 42px;
+            height: 42px;
+
+        }
+
+        .habilidades {
+
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+
+        }
+
+        .experiencia {
+            background-color: rgba(240, 248, 255, 0.507);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            width: 1400px;
+            height: 330px;
+            padding: 15px 15px;
+            margin-bottom: 5px;
+
+            h3 {
+                text-align: center;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <ul id="menu" class="fonteTitulo">
+
+        <li> <a href="index.html">Inicio</a></li>
+        <li> <a href="#">Sobre Mim</a></li>
+        <li> <a href="projetos.html">Projetos</a></li>
+
+    </ul>
+
+    <h1 class="fonteTitulo">Portfólio de Isabella Heinz</h1>
+    <h2 class="fonteTexto"><strong>Minhas experiências</strong></h2>
+
+    <div class="carrosel">
+
+        <div class="grupo">
+
+            <img class="card"
+                src="https://image2url.com/r2/default/images/1772907247514-df37e6f8-198a-425c-a6b9-91ee28983e0b.jpeg"
+                alt="image" />
+            <img class="card"
+                src="https://image2url.com/r2/default/images/1772907374807-24ef25ed-5de5-42b7-a533-ad4bd7b73f33.jpeg"
+                alt="image" />
+            <img class="card"
+                src="https://image2url.com/r2/default/images/1772975859531-1ec9543b-e3eb-4b15-b1e9-1f2997542243.jpeg"
+                alt="image" />
+            <img class="card"
+                src="https://image2url.com/r2/default/images/1772907460440-35bfd60e-e59e-4d37-9a91-49e0d6dd38fe.jpeg"
+                alt="image" />
+            <img class="card"
+                src="https://image2url.com/r2/default/images/1772907510331-1285609a-48b1-4881-b780-96e662b2b02c.jpeg"
+                alt="image" />
+            <img class="card"
+                src="https://image2url.com/r2/default/images/1772907564276-ff752a26-53e0-4cd2-8672-6443c8206d71.jpeg"
+                alt="image" />
+
+        </div> <!-- fim div grupo -->
+
+        <div aria-hidden class="grupo">
+
+            <img class="card"
+                src="https://image2url.com/r2/default/images/1772907247514-df37e6f8-198a-425c-a6b9-91ee28983e0b.jpeg"
+                alt="image" />
+            <img class="card"
+                src="https://image2url.com/r2/default/images/1772907374807-24ef25ed-5de5-42b7-a533-ad4bd7b73f33.jpeg"
+                alt="image" />
+            <img class="card"
+                src="https://image2url.com/r2/default/images/1772975859531-1ec9543b-e3eb-4b15-b1e9-1f2997542243.jpeg"
+                alt="image" />
+            <img class="card"
+                src="https://image2url.com/r2/default/images/1772907460440-35bfd60e-e59e-4d37-9a91-49e0d6dd38fe.jpeg"
+                alt="image" />
+            <img class="card"
+                src="https://image2url.com/r2/default/images/1772907510331-1285609a-48b1-4881-b780-96e662b2b02c.jpeg"
+                alt="image" />
+            <img class="card"
+                src="https://image2url.com/r2/default/images/1772907564276-ff752a26-53e0-4cd2-8672-6443c8206d71.jpeg"
+                alt="image" />
+
+        </div>
+
+    </div> <!-- Fim div carrosel -->
+
+    <div class="decoracoes">
+
+        <div class="decoracao1">
+
+            <img src="https://image.canva.com/E5DVeRxCS7TkDpqvvbIYbw%3D%3D/criAPDObnbY3yLh0M-zCPw%3D%3D.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH4EQN2C44%2F20260307%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260307T112025Z&X-Amz-Expires=17469&X-Amz-Signature=1fe1abb7926a7646c01633fdaccbe8b3aa56c98f3f81e6b1b8505d44f5f5f932&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2007%20Mar%202026%2016%3A11%3A34%20GMT"
+                style="height: 30px; width: 30px;" alt="Brilho">
+
+        </div>
+
+        <div class="decoracao2">
+
+            <img src="https://image.canva.com/E5DVeRxCS7TkDpqvvbIYbw%3D%3D/criAPDObnbY3yLh0M-zCPw%3D%3D.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH4EQN2C44%2F20260307%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260307T112025Z&X-Amz-Expires=17469&X-Amz-Signature=1fe1abb7926a7646c01633fdaccbe8b3aa56c98f3f81e6b1b8505d44f5f5f932&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2007%20Mar%202026%2016%3A11%3A34%20GMT"
+                style="height: 30px; width: 30px;" alt="Brilho">
+
+        </div>
+
+    </div> <!-- fim div decoracoes -->
+
+    <div class="informacoes">
+
+        <div class="informacao">
+
+            <h3 class="fonteTexto"> Quem sou eu? </h3>
+            <p class="fonteTexto"> Me chamo Isabella Heinz Fontinatti, tenho 16 anos de idade, moro em Foz do Iguaçu PR.
+                Minha cor favorita é rosa. </p>
+            <p class="fonteTexto">Atualmente estudo no IFPR Campus Foz do Iguaçu, na turma de TDS de 2025. Atuo como
+                representante de turma, representante dos estudantes do ensino médio pela CODIC, representante de TDS na
+                comissão do projeto político pedagógico do Campus e Presidente do Grêmio Estudantil.</p>
+
+
+            <a href="https://github.com/isabellaheinz" class="perfilGit"><img
+                    src="https://cdn-icons-png.flaticon.com/256/25/25231.png" alt="Github">
+            </a>
+
+            <a href="https://www.instagram.com/isa.bellaheinz?igsh=MXBqbjdwd3ZpeHJ4YQ%3D%3D&utm_source=qr"
+                class="perfilInsta"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1280px-Instagram_icon.png">
+            </a>
+
+        </div>
+
+        <div class="informacao">
+
+            <h3 class="fonteTexto"> O que gosto de fazer? </h3>
+            <ul class="fonteTexto">
+                <li>Estar a frente de projetos e iniciações.</li>
+                <li>Programação em geral.</li>
+                <li>Participar do meu grupo de jovens, Israel.</li>
+                <li>Ler fantasias e romances.</li>
+                <li>Dia de autocuidado com amigas.</li>
+                <li>Passear em lojas de roupas e livrarias.</li>
+                <li>Ter tudo que eu puder rosa.</li>
+            </ul>
+
+        </div>
+
+        <div class="informacao">
+
+            <h3 class="fonteTexto"> Por que programação? </h3>
+            <p class="fonteTexto"> Depois que descobri que gostava realmente de programar, percebi que tinha achado o
+                que gostaria de seguir. </p>
+            <p class="fonteTexto"> Comecei a pesquisar melhor sobre, para entender melhor sobre profissões futuras e
+                carreiras que poderia seguir. Algumas delas, realmente não fazem meu estilo, mas em compensação, tem
+                outras que eu gostaria de seguir.</p>
+            <p class="fonteTexto"> Minha meta de graduação é fazer Engenharia de Software, e agora tudo que estou
+                aprendendo espero aplicar para isso daqui alguns anos. </p>
+
+        </div>
+
+    </div><!-- fim div informacoes -->
+
+
+    <div class="habilidades">
+
+        <div class="experiencia">
+            <h3 class="fonteTexto">Minhas experiências com programação</h3>
+            <p class="fonteTexto">Eu comecei a progamar com 11 anos de idade, no 6° ano do ensino fundamental 2, eu
+                fazia um curso ofertado pelo estado, chamado EDUTECH. Faziamos cursos pelo alura, de forma totalmente
+                gratuita e online. De inicio, começamos a aprender a progamar em scratch. Foram meses aprendendo até
+                começar a fazer projetos bons. Depois, começamos a programar para dispositivos móveis, pelo MIT app.
+            </p>
+            <p class="fonteTexto">Dois anos depois, eu entrei para robótica e comecei a ter a disciplina de Pensamento
+                Computacional na escola. Na robótica, aprendi a programar na liguagem para arduinos, e em Pensamento
+                Computacional voltei a trabalhar com Scratch.</p>
+            <p class="fonteTexto">Para muitos, programar em scratch não agrega em nada em suas vidas, mas para mim foi
+                uma chave para descobrir meu futuro, e abrir portas para novas oportunidades. Participei de eventos
+                estaduais e nacionais apresentando meus projetos, fui destaque da turma no 8° e 9°, fiz parte do
+                portifólio estadual alura de 2024, e muito mais.</p>
+            <p class="fonteTexto">Foi apenas quando entrei para o IFPR que tive meu primeiro contato com uma linguagem
+                de programação de verdade.Atualmente adoro programar em PHP, ao mesmo tempo que pode ser dificil e
+                complicado programar, eu não me vejo fazendo outra coisa a não ser isto. Em HTML e CSS a sensação é um
+                pouco diferente, eu sempre gostei de montar slides e imagens, e me encontrei no CSS. Com prática
+                acredito poder desenvolver projetos incrivéis.</p>
+        </div>
+
+    </div> <!-- fim div habilidades -->
+
+</body>
+
+</html>
