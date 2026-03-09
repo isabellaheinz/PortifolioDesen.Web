@@ -3,7 +3,8 @@
 
 <head>
 
-    <link rel="icon" type="image/x-icon" href="https://image2url.com/r2/default/images/1772887474730-3f0511de-009a-4f5b-8e40-77019dfd0df5.png">
+    <link rel="icon" type="image/x-icon"
+        href="https://image2url.com/r2/default/images/1772887474730-3f0511de-009a-4f5b-8e40-77019dfd0df5.png">
     <!-- Fonte de textos -->
     <meta charset="UTF-8">
     <title>Portifólio de Isabella</title>
@@ -97,18 +98,9 @@
             margin: 0 10px;
         }
 
-        #ApresentacaoDisciplina {
+        #lados {
             display: flex;
             justify-content: space-evenly;
-            
-        }
-
-        #Ferramentas {
-            display: flex;
-            justify-content: space-evenly;
-            position: relative;
-            margin-bottom: 50px;
-
         }
 
         .Html {
@@ -119,9 +111,6 @@
             border-radius: 10px;
             padding: 15px 15px 15px 15px;
             margin: 25px;
-            position: absolute;
-            top: -130px;
-            left: 88px;
 
             h3 {
                 text-align: center;
@@ -142,15 +131,12 @@
         .Css {
 
             background-color: rgba(240, 248, 255, 0.507);
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
             border-radius: 10px;
             width: 600px;
             height: 337px;
             padding: 15px 15px;
             margin: 25px;
-            position: absolute;
-            top: -18px;
-            right: 88px;
 
             h3 {
                 text-align: center;
@@ -178,6 +164,7 @@
         }
 
         .Professor {
+
             background-color: rgba(240, 248, 255, 0.507);
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
             border-radius: 10px;
@@ -185,7 +172,7 @@
             height: 330px;
             padding: 15px 15px;
             margin: 25px;
-            float: right;
+            
 
             img {
                 height: 300px;
@@ -206,19 +193,6 @@
             }
         }
 
-        .espaco {
-           
-            width: 100px;
-            height: 100px;
-            margin: 50px;
-            margin-top: 50px;
-
-            position: absolute;
-            bottom: -450px;
-        
-        }
-
-
     </style>
 </head>
 
@@ -235,36 +209,24 @@
     <h1 class="fonteTitulo">Portfólio de Isabella Heinz</h1>
     <h2 class="fonteTexto"><strong>Apresentação da Disciplina</strong></h2>
 
-    <div id="ApresentacaoDisciplina">
+    <div id="lados">
 
-        <div class="DesenWeb">
+        <div class="ladoEsquerdo">
 
-            <h3 class="fonteTexto">Desenvolvimento para Web</h3>
-            <p class="fonteTexto">A Disciplina Desenvolvimento para Web, é uma das materias integradas ao 2° ano do
-                Ensino Médio no IFPR campus Foz do Iguaçu.</p>
-            <p class="fonteTexto">Durante a disciplina, Além de compreender os fundamentos da organização e estruturação
-                de uma página webos Estudantes estarão aptos a criar sites para web utilizando HTML, CSS e JavaScript.
-            <p>
+            <div class="DesenWeb">
 
-        </div>
-        <div class="Professor">
-            <img src="https://avatars.githubusercontent.com/u/1314923?v=4" alt="Professor Jefferson">
-            <h3 class="fonteTexto">Professor da Disciplina</h3>
+                <h3 class="fonteTexto">Desenvolvimento para Web</h3>
+                <p class="fonteTexto">A Disciplina Desenvolvimento para Web, é uma das materias integradas ao 2° ano do
+                    Ensino Médio no IFPR campus Foz do Iguaçu.</p>
+                <p class="fonteTexto">Durante a disciplina, Além de compreender os fundamentos da organização e
+                    estruturação
+                    de uma página webos Estudantes estarão aptos a criar sites para web utilizando HTML, CSS e
+                    JavaScript.
+                <p>
 
-            <ul class="fonteTexto">
-                <li>Bacharel em Ciência da Computação;</li>
-                <li>Especialista em Desenvolvimento de Sistemas para Internet e Dispositivos móveis;</li>
-                <li>Mestrado em Engenharia;</li>
-                <li>Experiência profissional: UNESCO; UNILA; IFC; IFPR;</li>
-            </ul>
+            </div> <!-- fim div DesenWeb -->
 
-        </div> <!-- final div Professor -->
-
-    </div> <!-- final div ApresentacaoDisciplina -->
-
-    <div id="Ferramentas">
-
-        <div class="Html">
+             <div class="Html">
 
             <h3 class="fonteTexto">Como funciona o Html?</h3>
             <ul class="fonteTexto">
@@ -287,9 +249,26 @@
 
             </ul>
 
-        </div>
+        </div> <!-- fim div HTML -->
 
-        <div class="Css">
+        </div> <!-- fim div ladoEsquerdo -->
+
+        <div class="ladoDireito">
+
+            <div class="Professor">
+                <img src="https://avatars.githubusercontent.com/u/1314923?v=4" alt="Professor Jefferson">
+                <h3 class="fonteTexto">Professor da Disciplina</h3>
+
+                <ul class="fonteTexto">
+                    <li>Bacharel em Ciência da Computação;</li>
+                    <li>Especialista em Desenvolvimento de Sistemas para Internet e Dispositivos móveis;</li>
+                    <li>Mestrado em Engenharia;</li>
+                    <li>Experiência profissional: UNESCO; UNILA; IFC; IFPR;</li>
+                </ul>
+
+            </div> <!-- final div Professor -->
+
+            <div class="Css">
 
             <h3 class="fonteTexto">Como funciona o CSS?</h3>
             <ul class="fonteTexto">
@@ -307,13 +286,13 @@
 
             </ul>
 
-        </div> <!-- fim div Css -->
+            </div> <!-- fim div Css -->
 
-    </div> <!-- fim div Ferramentas -->
+        </div> <!-- fim div ladoDireito -->
 
-    <div class="espaco">
-    </div>
-   
+
+    </div> <!-- fim div laados -->
+
 </body>
 
 </html>
